@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .container {
+        position: relative;
+        height: 600px;
+        border: 2px solid black;
+        margin: 20px auto;
+        width: 80%;
+        padding: 10px;
+    }
+    
+    .static {
+        position: static;
+        background-color: lightgray;
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    .relative {
+        position: relative;
+        background-color: lightblue;
+        left: 30px;
+        top: 10px;
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    .absolute {
+        position: absolute;
+        background-color: lightgreen;
+        top: 50px;
+        right: 10px;
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    .fixed {
+        position: fixed;
+        background-color: lightcoral;
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+        margin: 5px;
+        color: white;
+    }
+    
+    .sticky {
+        position: sticky;
+        background-color: gold;
+        top: 0;
+        padding: 10px;
+        margin: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning Examples</h1>
+    <div class="container">
+        <div class="static">Static Position</div><br><br>
+        <br>
+        <div class="relative">Relative Position</div><br><br>
+        <br>
+        <div class="absolute">Absolute Position</div><br><br>
+        <br>
+        <div class="fixed">Fixed Position</div><br><br>
+        <br>
+        <div class="sticky">Sticky Position</div><br><br>
+        <br>
+    </div>
+</body>
+</html>
+
+
