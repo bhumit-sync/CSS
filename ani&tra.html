@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.animated-box {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.5s, background-color 0.5s;
+    margin: 20px auto;
+}
+
+.animated-box:hover {
+    transform: scale(1.2);
+    background-color: violet;
+}
+
+.bouncing-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>CSS Animations and Transitions</h1>
+    <div class="animated-box">Hover Me</div><br><br>
+    <br>
+    <div class="bouncing-box">Bouncing Animation</div>
+</body>
+</html>
+
